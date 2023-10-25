@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lamp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="hero">
+    <nav>
+        <img src="menu.png"  class="menue-img">
+        <img src="logo.png"  class="logo">
+        <ul>
+            <li > <a href=""> Latest</a></li>
+            <li > <a href=""> Modern</a></li>
+            <li > <a href=""> contemporay</a></li>
+            <li > <a href=""> Affordable</a></li>
+
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+
+    </nav>
+
+
+    <div class="lamp-container">
+        <img src="lamp.png" class="lamp">
+        <img src="light.png" class="light" id="light">
+        
+
+    </div>
+    <div class="text-container">
+        <h1>VUELAMP <br>LIGHTGING COMPANY </h1>
+        <h2>Welcome to the SriLankans biggest online light collection website.We are the industy No:1 Lighting company with ISO 9001:2015,HACCP,GMP & OHSAS</h2>
+        <a href="">View Our Collection</a>
+
+        <div class="control">
+            
+            <div class="line"><span>
+                <img src="pngegg.png" class="certificate" >
+                <img src="Haccp.png" class="certificate2" >
+                <img src="gmp.png" class="certificate3" >
+                <img src="iso.png" class="certificate4" >
+
+
+                
+            </span></div>
+            
+        </div>
+    </div>
+   </div>
+
+
+
+  <script >
+    var btn =document.getElementById("btn");
+    var light =document.getElementById("light");
+   
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+        
+    }
+  </script>  
+</body>
+</html>
